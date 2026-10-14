@@ -1,0 +1,22 @@
+{
+  "name": "cyberbit-slots",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Cyberbit Slots \u2014 virtual coin (CBIT) slot demo for testnets",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy:local": "hardhat run scripts/deploy.js --network hardhat",
+    "deploy:sepolia": "hardhat run scripts/deploy.js --network sepolia",
+    "deploy:bsctest": "hardhat run scripts/deploy.js --network bscTestnet",
+    "serve": "npx http-server . -p 8080"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-ethers": "^3.0.8",
+    "dotenv": "^16.4.5",
+    "ethers": "^6.13.4",
+    "hardhat": "^2.22.15",
+    "@nomicfoundation/hardhat-chai-matchers": "^2.0.8",
+    "chai": "^4.5.0"
+  }
+}
